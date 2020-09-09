@@ -12,7 +12,7 @@ Very alpha, breaking changes will happen. Contributions welcome.
 (i/emit-types)
 ```
 
-and add `"configs/inspector"` to your `:config-paths` in `config.edn`. Requires clj-kondo 2020.09.09 or newer.
+Add `"configs/inspector"` to your `:config-paths` in `config.edn`. Requires clj-kondo 2020.09.09 or newer.
 
 ## Example
 
