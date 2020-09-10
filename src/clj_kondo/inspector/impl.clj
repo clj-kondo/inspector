@@ -46,10 +46,11 @@
                         [_fspec _:args args-spec] (s/form (s/get-spec sym))]
                     (if (seq? args-spec)
                       (let [arg-types (resolve-spec args-spec)]
-                        (when-not (every? nil? arg-types)
+                        (if-not (every? nil? arg-types)
                           (let [arity (count arg-types)]
                             (assoc-in acc [:linters :type-mismatch :namespaces
-                                           sym-ns sym-name :arities arity :args] arg-types))))
+                                           sym-ns sym-name :arities arity :args] arg-types))
+                          acc))
                       acc)))
                 {}
                 (filter symbol? (keys (s/registry))))]
