@@ -11,6 +11,6 @@
 
 (defn -main [& args]
   (let [_ (:options (parse-opts args cli-options))]
-    (impl/emit-kondo-types)
+    (impl/emit-types)
     (println "Add" (.getPath (io/file "configs" "inspector"))
              "to :config-paths in .clj-kondo/config.edn to activate.")))
