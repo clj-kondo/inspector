@@ -4,7 +4,7 @@
             [clojure.tools.cli :refer [parse-opts]]))
 
 (defn emit-types []
-  (impl/emit-kondo-types))
+  (impl/emit-types))
 
 (def cli-options
   [])
