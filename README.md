@@ -1,6 +1,6 @@
 # Clj-kondo inspector
 
-Experimental tool to turn [clojure.spec.alpha](https://github.com/clojure/spec.alpha) specs into [clj-kondo](https://github.com/borkdude/clj-kondo/) [type annotations](https://github.com/borkdude/clj-kondo/blob/master/doc/types.md) for linting.
+Experimental tool using a REPL-assisted static analysis approach. It turns [clojure.spec.alpha](https://github.com/clojure/spec.alpha) specs into [clj-kondo](https://github.com/borkdude/clj-kondo/) [type annotations](https://github.com/borkdude/clj-kondo/blob/master/doc/types.md) for linting.
 
 Very alpha, breaking changes will happen. Not ready for serious usage. Contributions welcome.
 
